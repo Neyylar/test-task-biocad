@@ -17,8 +17,8 @@ const MOCK_TABLE_HEADERS_SECOND: (string | undefined)[] = ["", "Наименов
 const DividerEnd = () => {
     return (
         <HStack position="relative">
-            <Divider h="1px" color="darkBlue" bgColor="darkBlue" w="50px"/>
-            <Box w="5px" h="5px" borderRadius={2} bgColor="darkBlue" position="absolute" left="40px"></Box>
+            <Divider h="1px" color="darkBlue" bgColor="darkBlue" w="45px"/>
+            <Box w="5px" h="5px" borderRadius={2} bgColor="darkBlue" position="absolute" left="35px"></Box>
         </HStack>
 
     )
@@ -35,7 +35,7 @@ const ProductRow = ({item, stages, ...props}: ProductRowProps) => {
             <Td mr={7} textAlign="center" borderRight="1px solid" borderColor="greyLines">{item.action}</Td>
             <Td mr={12} textAlign="center" borderRight="1px solid" borderColor="greyLines">{item.indication}</Td>
             {[...Array(stages)].map((stage, i) =>
-                <Td key={stage} width="90px" borderRight="1px solid" borderColor="greyLines">
+                <Td key={stage} minW="90px" borderRight="1px solid" borderColor="greyLines">
                     {item.devStage > i + 1 && <Divider h="1px" color="darkBlue" bgColor="darkBlue" w="100%" pr={1}/>}
                     {item.devStage === i + 1 && <DividerEnd/>}
                 </Td>
