@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "type": 1,
+    "name": "ANB-4",
+    "action": "SMN1 transgene AAV9",
+    "indication": "СМА 1 типа",
+    "devStage": 1
+  },
+  {
+    "id": 2,
+    "type": 1,
+    "name": "ANB-2",
+    "action": "Factor-IX transgene AAV5",
+    "indication": "Гемофилия B",
+    "devStage": 1
+  },
+  {
+    "id": 3,
+    "type": 2,
+    "name": "Сампэгинтерферон бета-1а (BCD-054)",
+    "action": "Pegylated interferon beta-1a",
+    "indication": "Рассеянный склероз",
+    "devStage": 4
+  },
+  {
+    "id": 4,
+    "type": 3,
+    "name": "Пролголимаб (BCD-100)",
+    "action": "anti-PD-1 mAb",
+    "indication": "НМРЛ",
+    "devStage": 4
+  },
+  {
+    "id": 5,
+    "type": 3,
+    "name": "Пролголимаб (BCD-100)",
+    "action": "anti-PD-1 mAb",
+    "indication": "Рак шейки матки",
+    "devStage": 4
+  },
+  {
+    "id": 6,
+    "type": 2,
+    "name": "Дивозилимаб (BCD-132)ANB-4",
+    "action": "anti-CD20 mAb",
+    "indication": "Рассеянный склероз",
+    "devStage": 4
+  },
+  {
+    "id": 7,
+    "type": 3,
+    "name": "BCD-166",
+    "action": "anti-GITR mAb",
+    "indication": "Солидные опухоли",
+    "devStage": 1
+  },
+  {
+    "id": 8,
+    "type": 3,
+    "name": "Пролголимаб + Нурулимаб (BCD-217)",
+    "action": "anti-CTLA-4 mAb + anti-PD1 mAb",
+    "indication": "Меланома",
+    "devStage": 3
+  },
+  {
+    "id": 9,
+    "type": 3,
+    "name": "BCD-223",
+    "action": "anti-IL10 mAb",
+    "indication": "Солидные опухоли",
+    "devStage": 1
+  },
+  {
+    "id": 10,
+    "type": 3,
+    "name": "BCD-225",
+    "action": "anti-IL15SA mAb",
+    "indication": "Солидные опухоли",
+    "devStage": 1
+  },
+  {
+    "id": 11,
+    "type": 1,
+    "name": "BCD-245",
+    "action": "anti-GD-2 mAb",
+    "indication": "Нейробластома",
+    "devStage": 1
+  },
+  {
+    "id": 12,
+    "type": 4,
+    "name": "Вакцина для профилактики COVID-19 (BCD-250)",
+    "action": "SARS-CoV-2 AAV5-based vaccine",
+    "indication": "Профилактика COVID-19",
+    "devStage": 2
+  },
+  {
+    "id": 13,
+    "type": 2,
+    "name": "Диметил Фумарат (BCD-058)",
+    "action": "activator of nuclear factor erythroid 2 [NF-E2]-related factor 2",
+    "indication": "Рассеянный склероз",
+    "devStage": 5
+  },
+  {
+    "id": 14,
+    "type": 3,
+    "name": "Сунитиниб (BCD-200)",
+    "action": "indolinone derivative and tyrosine kinase inhibitor",
+    "indication": "Почечно-клеточный рак",
+    "devStage": 4
+  },
+  {
+    "id": 15,
+    "type": 3,
+    "name": "Пембролизумаб (BCD-201)",
+    "action": "PD-1 inhibitor",
+    "indication": "Солидные опухоли\nОнкогематология",
+    "devStage": 2
+  }
+]
