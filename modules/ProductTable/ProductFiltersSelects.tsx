@@ -3,6 +3,7 @@ import {Dropdown} from "../../components/Dropdown/Dropdown";
 import {InfoLabel} from "../../components/InfoLabel/InfoLabel";
 import {DefaultDropDownItem} from "../../shared";
 import {Product, ProductType} from "../../shared/Product";
+import {useState} from "react";
 
 const MOCK_SELECT_ITEMS: DefaultDropDownItem[] = [
     {label: 'option1', value: 'option1'},
@@ -10,8 +11,15 @@ const MOCK_SELECT_ITEMS: DefaultDropDownItem[] = [
     {label: 'option3', value: 'option3'},
     {label: 'option4', value: 'option4'},
 ];
+const COLORS = ["red", "cyan", "blue", "violet"];
+type ProductFilterProps = {
+    types: ProductType[],
+    setFilters: (id?: number) => void,
+    filters?: number,
+};
+const otherId = 4;
+export const ProductFiltersSelects = ({types, setFilters, filters} : ProductFilterProps) => {
 
-export const ProductFiltersSelects = () => {
     const COLORS = ["red", "cyan", "blue", "violet"];
     return (
         <Container maxW={'6xl'}>
@@ -22,11 +30,12 @@ export const ProductFiltersSelects = () => {
                 <Dropdown items={MOCK_SELECT_ITEMS} placeholder="Терапевтическая область"/>
             </Grid>
             <Flex mt="50px" gap={5} justifyContent="flex-start" flex={1} direction={{base: "column", lg: "row"}}>
-                <InfoLabel style="red" text="Орфанные заболевания"/>
-                <InfoLabel style="cyan" text="Аутоиммунные заболевания"/>
-                <InfoLabel style="blue" text="Онкология"/>
-                <InfoLabel style="violet" text="Другое" noIcon={true}/>
+                {types.map((item, key) => (
+                    <InfoLabel key={key} item={item} style={COLORS[item.id-1]} noIcon={item.id === otherId} setFilter={(id) => {setFilters(id)
+                        console.log(id)}}/>
+                ))}
             </Flex>
+            {filters && <InfoLabel style="darkBlue" setFilter={() => setFilters()} />}
         </Container>
     );
 };
