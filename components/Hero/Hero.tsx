@@ -4,7 +4,7 @@ import {useBreakpoint} from "../../hooks/useBreakpoint";
 export const Hero = () => {
     const {isMobile} = useBreakpoint();
     return (
-        <Box bg="white" position="relative">
+        <Box bg="white" position="relative" overflow="hidden">
             <Stack
                 as={Container}
                 maxW={'6xl'}
