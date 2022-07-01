@@ -31,7 +31,7 @@ const MobileNav = ({isOpen}: { isOpen: boolean }) => {
     return (
         <Stack
             p={4}
-            display={{lg: 'none'}}
+            display={{xl: 'none'}}
             zIndex={9999}
             pos="fixed"
             top="60px"
@@ -85,10 +85,10 @@ export const Header = () => {
                 }}>
                 <Container as={Flex} maxW={'6xl'} align={'center'}>
                     <Flex
-                        flex={{base: '0', lg: 'auto'}}
+                        flex={{base: '0', xl: 'auto'}}
                         ml={{base: -2}}
-                        mr={{base: 6, lg: 0}}
-                        display={{base: 'flex', lg: 'none'}}>
+                        mr={{base: 6, xl: 0}}
+                        display={{base: 'flex', xl: 'none'}}>
                         <IconButton
                             onClick={onToggle}
                             icon={isMobileNavOpen ? <CloseIcon w={3} h={3}/> : <HamburgerIcon w={5} h={5}/>}
@@ -125,7 +125,7 @@ export const Header = () => {
                         flex={{base: 1, lg: 'auto'}}
                         justify={'center'}
                     >
-                        <Stack direction={'row'} spacing={4} display={{base: 'none', lg: 'flex'}}>
+                        <Stack direction={'row'} spacing={4} display={{base: 'none', xl: 'flex'}}>
                             {NAV_ITEMS.map((navItem) => (
                                 <Box key={navItem.label}>
                                     <ChakraLink
